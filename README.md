@@ -7,3 +7,5 @@ Official GitHub Pages portfolio and project hub for **ironpulse-create6731**.
 
 ## Submit Build
 Have a custom build or update? Submit your version via our [Official Form](https://docs.google.com/forms/d/e/1FAIpQLScGAp934g0Wy2JLpDYXbyOwrX-Dx6_fahOCKjaL2UyDYQZVKg/viewform).
+Note:EPnews, our new news page, is now available as an APK.([EPNEWS 1.0.zip](https://github.com/user-attachments/files/30851991/EPNEWS.1.0.zip)
+
