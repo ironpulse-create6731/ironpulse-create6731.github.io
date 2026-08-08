@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
   <title>EPnews - Technology & Digital Portal</title>
   <style>
     /* ==========================================================================
-       1. CSS VARIABLES (Customizable Theme Settings)
+       1. CSS VARIABLES (Customizable Dark Theme Settings)
        ========================================================================== */
     :root {
       --bg-body: #080b11;        /* Main dark background */
@@ -17,6 +18,7 @@
       --text-muted: #94a3b8;     /* Secondary/Muted text color */
       --accent-red: #ef4444;     /* Breaking news / Important tag */
       --accent-blue: #38bdf8;    /* Links and Tech category tag */
+      --accent-green: #10b981;   /* Gaming / Minecraft tag */
       --max-width: 1200px;       /* Container max width */
       --radius: 12px;            /* Border radius */
     }
@@ -110,6 +112,7 @@
 
     .tag-blue { background: rgba(56, 189, 248, 0.15); color: var(--accent-blue); }
     .tag-red { background: rgba(239, 68, 68, 0.15); color: var(--accent-red); }
+    .tag-green { background: rgba(16, 185, 129, 0.15); color: var(--accent-green); }
 
     .meta {
       font-size: 0.8rem;
@@ -141,7 +144,7 @@
 
     .news-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 20px;
     }
 
@@ -174,9 +177,7 @@
       margin-bottom: 20px;
     }
 
-    /* ==========================================================================
-       5. RESPONSIVE DESIGN
-       ========================================================================== */
+    /* RESPONSIVE DESIGN */
     @media (max-width: 768px) {
       .header-content {
         flex-direction: column;
@@ -196,9 +197,9 @@
       <a href="#" class="logo">EP<span>NEWS</span></a>
       <nav>
         <a href="#" class="active">Technology</a>
+        <a href="#">Gaming</a>
         <a href="#">Software</a>
         <a href="#">Android</a>
-        <a href="#">Hardware</a>
       </nav>
     </div>
   </header>
@@ -206,11 +207,11 @@
   <!-- MAIN CONTENT -->
   <main class="container">
 
-    <h2 class="section-title">Latest Technology Updates</h2>
+    <h2 class="section-title">Latest Technology & Gaming Updates</h2>
 
     <div class="news-grid">
 
-      <!-- SINGLE NEWS CARD: PCBOOT APK RELEASE -->
+      <!-- NEWS CARD 1: PCBOOT APK -->
       <a href="#" class="news-card">
         <span class="tag tag-blue">Technology</span>
         <h3>PCBoot Official APK Expected to Launch Soon, Reports Suggest</h3>
@@ -222,7 +223,19 @@
         </div>
       </a>
 
-      <!-- COPY & PASTE NEW ARTICLES HERE AS NEEDED -->
+      <!-- NEWS CARD 2: EMERALD PICKAXE MINECRAFT SERVER -->
+      <a href="#" class="news-card">
+        <span class="tag tag-green">Gaming</span>
+        <h3>GitHub User 'Emerald Pickaxe' Teases Upcoming Minecraft Bedrock Server</h3>
+        <p>Prominent GitHub developer Emerald Pickaxe has announced plans to launch a dedicated Minecraft Bedrock Edition server soon, promising custom features and seamless mobile cross-play integration.</p>
+        <div class="meta">
+          <span>10 mins ago</span>
+          <span>•</span>
+          <span>1 min read</span>
+        </div>
+      </a>
+
+      <!-- COPY & PASTE NEW ARTICLES HERE -->
 
     </div>
 
